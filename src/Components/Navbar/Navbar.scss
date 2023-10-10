@@ -1,0 +1,87 @@
+$blue: #3DA0E7;
+
+.css-19kzrtu {
+    padding: 5px !important;
+}   
+
+#navbar {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 1px 5px rgb(227, 227, 227);
+}
+
+#nav-links {
+    display: flex;
+}
+
+#nav-link, #nav-link-open {
+    margin: 2px;
+    text-transform: capitalize;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#nav-link:hover, #nav-link-open:hover {
+    background-color:rgba(218, 218, 218, 0.28);
+    font-weight: bolder;
+}
+
+#nav-link-open:active {
+    background-color: rgb(226, 226, 226);
+}
+
+// #nav-link:hover:after {
+// 	content: '';
+// 	position: absolute;
+// 	left: 0;
+// 	bottom: 0;
+// 	width: 0;
+// 	border-bottom: solid 2px #000;
+// 	animation: border_anim 200ms linear forwards;
+// }
+
+@keyframes border_anim {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
+}
+
+
+#contact-btn, #contact-btn-open {
+    border: 1px;
+    border-style: solid;
+    border-color: $blue;
+    border-radius: 10px;
+    
+    color: $blue;
+    text-transform: none;
+    margin: 2px;
+    font-size: 16px;
+}
+
+#nav-link-open, #contact-btn-open {
+    width: 90%;
+}
+
+#contact-btn:hover,
+#contact-btn-open:hover {
+    background-color: $blue;
+    color: white;
+}
+
+@media only screen and (max-width: 599px) {
+
+    #nav-link, #contact-btn {
+        display: none;
+    }
+}
