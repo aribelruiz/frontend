@@ -7,6 +7,7 @@ import pfp from '../../Images/defaultpfp.jpg';
 
 function Home() {
 
+  const name = 'Nathaniel Lester';
   const navigate = useNavigate();
 
   return (
@@ -14,7 +15,7 @@ function Home() {
       <div className='home-left'>
         <div className='welcome-header'>
           <h4 className='header-underline'>Welcome to</h4>
-          <h1>Your Name</h1>
+          <h1>{name}</h1>
           <h2>Real Estate</h2>
         </div>
         
