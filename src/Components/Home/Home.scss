@@ -1,24 +1,61 @@
 $blue: #3DA0E7;
 $blue2: #2a87ca;
+$yellow: #fed84d;
+
+#splash {
+    // background-color: green;
+    margin-top: 60px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#splash h1 {
+    font-size: calc(48px + 2vw);
+    margin: 0px;
+    color: white;
+    filter: drop-shadow(0px 0px 10px rgb(69, 69, 69));
+    font-weight: 800;
+}
+#splash h3 {
+    font-size: calc(20px + 2vw);
+    margin: 0px;
+    color: $yellow;
+    filter: drop-shadow(0px 0px 10px rgb(69, 69, 69));
+    font-weight: 600;
+}
+
+.splash-carousel .carousel-indicators,
+.splash-carousel .carousel-control-prev,
+.splash-carousel .carousel-control-next {
+    display: none;
+}
 
 #home {
     background-color: white;
-    min-height: 90vh;
+    min-height: 100vh;
     
     display: flex;
     flex-direction: row;
     justify-content: center;
+    // margin-top: 60px;
+    padding-bottom: 5vh;
 }
 
 .home-left {
     width: 60%;
-    padding: 7vw;
-    
+    padding: 5vw;
+    padding-right: 1vw;
+    // padding-top: 10vw;
+
     display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 
-.welcome-header h1, .welcome-header h2, .welcome-header h4 {
+#home .welcome-header h1, #home .welcome-header h2, #home .welcome-header h4 {
     margin: 0px;
     margin-left: 10px;
 }
@@ -86,26 +123,38 @@ $blue2: #2a87ca;
 
 
 .home-right {
-    width: 50%;
-    padding-top: 7vw;
+    width: 60%;
+    padding-top: 3vw;
     display: flex;
     justify-content: flex-end;
-    // align-items: center;
+
 }
 
-.pfp-img {
+.pfp-img{
     // background-color: rgb(198, 198, 198);
     height: fit-content;
-    width: 100%;
-    border-radius: 158px 0px 0px 0px;
+    width: 80%;
+    border-radius: 10vw 0px 0px 0px;
 }
-
-.pfp-img img {
+.pfp-img img{
     width: 100%;
-    border-radius: 158px 0px 0px 0px;
+    border-radius: 10vw 0px 0px 0px;
+    // justify-self: end;
+    // margin-left: 5vw;
 }
 
 @media only screen and (max-width: 599px) {
+
+    #splash {
+        height: 50vh;
+    }
+
+    #splash h1 {
+        font-size: calc(32px + 2vw);
+    }
+    #splash h3 {
+        font-size: calc(20px + 2vw);
+    }
 
     #home {
         flex-direction: column;
@@ -114,6 +163,10 @@ $blue2: #2a87ca;
     
     .home-left, .home-right {
         width: 100%;
+    }
+
+    .home-right {
+        justify-content: center;
     }
 
     .welcome-header h1 {
@@ -137,9 +190,10 @@ $blue2: #2a87ca;
     .pfp-img {
         display: flex;
         justify-content: flex-end;
+        width: 90%;
     }
     .pfp-img img {
-        width: 90%;
+        width: 100%;
     }
 
 }

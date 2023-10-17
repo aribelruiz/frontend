@@ -1,17 +1,157 @@
 $blue: #3DA0E7;
+$blue2:rgb(25, 146, 232);
+$headerGray: #ebeff2;
 
 .css-19kzrtu {
     padding: 5px !important;
 }   
 
-#navbar {
-    background-color: white;
-    color: black;
-    box-shadow: 0px 1px 5px rgb(227, 227, 227);
+#navbar .css-hyum1k-MuiToolbar-root {
+    min-height: 64px !important;
 }
 
-#nav-links {
+.logo {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    // background-color: red;
+    width: fit-content;
+    column-gap: 5px;
+    cursor: pointer;
+}
+
+.logo svg {
+    color: $blue;
+    font-size: 50px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.logo-text h5, .logo-text h6 {
+    margin: 0px;
+}
+.logo-text h5 {
+    font-size: 20px;
+    font-weight: 750;
+}
+.logo-text h6 {
+    margin-top: -7px;
+    font-size: 15px;
+    font-weight: 750;
+}
+
+#header {
+    background-color: $headerGray;
+    height: 70px;
+    // max-height: fit-content;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 1;
+}
+
+#header .header-info {
+    // background-color: red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.header-left {
+    display: flex;
+    // flex-wrap: wrap;
+    align-items: center;
+    column-gap: 10px;
+    width: 50%;
+}
+
+#header h3 {
+    margin: 0px;
+    font-weight: 400;
+    font-size: calc(12px + 0.2vw);
+}
+#header a {
+    font-size: calc(12px + 0.2vw);
+}
+
+#header .header-img img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+#header svg {
+    font-size: calc(16px + 1vw);
+    color: $blue;
+}
+
+#header .phone-btn {
+    color: black;
+    text-decoration: none;
+    background-color: $blue;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 10px 2px 10px;
+    font-weight: 600;
+}
+
+#header .fb-btn {
+    background-color: none;
+}
+
+#header .phone-btn:hover {
+    background-color: $blue2;
+}
+#header .header-socials svg:hover  {
+    color: $blue2;
+    cursor: pointer;
+}
+
+#header .header-socials  {
+    display: flex;
+    column-gap: 5px;
+}
+
+#navbar {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 0px 1px 5px rgb(190, 190, 190);
+    // box-shadow: none;
+    top: 70px;
+    width: 100vw;
+    padding-left: 30px;
+    justify-content: space-between;
+}
+
+#navbar .logo {
+    width: 40vw;
+}
+#navbar .logo .logo-text h5 {
+    margin-bottom: 6px;
+}
+
+#navbar .css-hyum1k-MuiToolbar-root {
+    padding: 0px;
+    // width: 100%;
+}
+#nav-links {
+    // background-color: green;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    // padding-left: 10%;
+    padding: 10px 20px 10px 20px!important;
+
 }
 
 #nav-link, #nav-link-open {
@@ -81,7 +221,21 @@ $blue: #3DA0E7;
 
 @media only screen and (max-width: 599px) {
 
+    .css-xi606m hr {
+        border-style: none;
+    }
+
+    #navbar .css-hyum1k-MuiToolbar-root {
+        min-height: 0px;
+        padding-left: 20px;
+    }
+
     #nav-link, #contact-btn {
         display: none;
     }
+
+    .css-1nxmd3h-MuiListItem-root {
+        border-bottom: 1px solid rgb(223, 223, 223);
+    }
+
 }

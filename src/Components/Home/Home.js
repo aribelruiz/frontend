@@ -4,6 +4,9 @@ import { useNavigate } from 'react-router-dom';
 import { Button } from '@mui/material';
 
 import pfp from '../../Images/defaultpfp.jpg';
+import TestimonialsHome from '../Testimonials/TestimonialsHome';
+import Splash from './Splash';
+import BlogHome from '../Blog/BlogHome';
 
 function Home() {
 
@@ -11,6 +14,8 @@ function Home() {
   const navigate = useNavigate();
 
   return (
+    <>
+    <Splash/>
     <div id='home'>
       <div className='home-left'>
         <div className='welcome-header'>
@@ -32,11 +37,14 @@ function Home() {
         </div>
       </div>
       <div className='home-right'>
-        <div className='pfp-img'>
+        <div className='pfp-img home-child'>
           <img src={pfp} alt='profile-img'/>
         </div>
       </div>
     </div>
+    <TestimonialsHome/>
+    <BlogHome/>
+    </>
   );
 }
 

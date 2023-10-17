@@ -1,0 +1,130 @@
+$gray: #cfcfcf;
+$grayBck: #f0f4f5;
+
+#footer {
+    background-color: white;
+}
+
+.footer-contact {
+    width: 40%;
+    margin: 2vw auto 2vw auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-contact button {
+    margin-right: auto;
+}
+
+.footer-links {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links .logo {
+    padding-bottom: 15px;
+}
+
+.footer-links .logo .logo-text h5 {
+    // background-color: red;
+    margin-bottom: 6px;
+}
+
+.footer-links-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10%;
+    width: 100%;
+    padding: 45px 45px 45px 45px;
+}
+
+.footer-body-left, .footer-body-right {
+    width: fit-content;
+    min-width: fit-content;
+}
+
+.footer-body-left, .footer-body-right {
+    padding-top: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+.footer-body-right h3 {
+    margin-top: 4px;
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer-link-div a h5{
+    font-weight: 100;
+    font-size: calc(14px + 0.1vw);
+}
+
+.footer-link-div a {
+    color: black;
+}
+
+.footer-links-footer h5{
+    padding-bottom: 10%;
+    font-weight: normal;
+    font-size: calc(14px + 0.1vw);
+}
+
+.footer-links-body hr {
+    display: none;
+}
+
+// Contact Section
+#footer #contact {
+    background-color:$grayBck;
+    margin-top: 0px;
+}
+
+// #footer #contact .page-header {
+//     display: none;
+// }
+
+
+
+
+
+
+@media only screen and (max-width: 599px) {
+
+    .footer-contact {
+        width: 60%;
+        padding-bottom: 35px;
+    }
+
+    .footer-links {
+        padding: 20px;
+    }
+
+    .footer-links-body {
+        flex-direction: column;
+    }
+
+    .footer-links-body hr {
+        display: block;
+    }
+
+    .footer-links-body .footer-body-right {
+        width: 100%;
+    }
+
+    .footer-body-right h3 {
+        margin-bottom: 5px;
+        margin-top: 20px;
+    }
+
+}
